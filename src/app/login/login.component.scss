@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-weight: 400;
+    background-color: #f0f4f9;
+   
+}
+
+form{
+    margin-left: 200px ;
+    margin-right:200px;
+    background-color: #ffffff ;
+     border-radius: 28px;
+    height: 350px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 36px 10px;
+    margin-bottom: 0px;
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif !important;
+    font-weight: 400;
+}
+
+.main>.mat-mdc-button:not(:disabled) {
+    margin-left:0px;
+    color: #0B57D0;
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-weight: 400;
+    font:14px;
+}
+
+
+
+
+
+mat-form-field{
+    width:400px;
+    margin-left:9px;
+    color: #1f1f1f;
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-weight: 400;
+}
+.note{
+    margin-left:8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #444746;
+    font-size: 0.875rem;
+
+}
+.mat-mdc-form-field-subscript-wrapper,.mat-mdc-form-field-bottom-align,.ng-tns-c1205077789-0{
+   height: 60px;
+
+}
+
+mat-button{
+    padding: 0px !important;
+}
+
+.blue-button{
+   height: auto;
+   text-align: left !important;
+
+}
+.button-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:20px
+}
+.button{
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 50px;
+   
+}
+.button-2{
+    background-color: #0B57D0 !important;
+}
+.main{
+    display: flex;
+    margin-top: 24px;
+}
+h1{
+    margin: 0;
+    padding: 0px;
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-weight: 400;
+    
+    font-weight: 400;
+}
+span{
+    
+    font-weight: 400;
+
+}
+.flex-container-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-left:9px;
+}
+
+.flex-container-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin-left:9px;
+}
+
+.main-2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    font-size:12px;
+    color:#1f1f1f
+}
+.footer-button{
+    font-size:12px !important;
+    color: #1f1f1f !important;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: rgb(231, 229, 229);
+    
+}
+
+.footer-button:not(:hover){
+    background-color: transparent;
+
+}
+
+
+
+
