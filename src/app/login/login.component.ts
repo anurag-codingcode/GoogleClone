@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Food {
   value: string;
@@ -16,8 +17,13 @@ interface Car {
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  constructor(private router:Router){}
   selectedValue!: string;
   selectedCar!: string;
+  goToRegister(){
+    this.router.navigate(['register']);
+
+  }
 
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
