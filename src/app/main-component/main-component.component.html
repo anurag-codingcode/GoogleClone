@@ -24,7 +24,15 @@
                     <h1>{{data.leftHeading}}</h1>
                     <span>{{data.leftParagraph}}</span>
                 </div>
-                <div class="flex-container-main-2" [innerHTML]="data.rightTop">
+                <div class="flex-container-main-2">
+                    <div>
+                        <div *ngFor="let item of rightTop">
+                            <mat-form-field appearance="outline" color="primary">
+                                <mat-label>{{item.label}}</mat-label>
+                                <input autofocus matInput [type]="item.type">
+                            </mat-form-field>
+                        </div>
+                    </div>
                     
                     
                 </div>

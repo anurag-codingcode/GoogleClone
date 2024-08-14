@@ -9,10 +9,11 @@ import { Router } from '@angular/router';
 export class MainComponentComponent implements OnInit{
   @Input() data: any;
   
-  
+  rightTop=[{label:'Email or phone',type:'text'},{label:'Email or phone',type:'text'}]
 
   constructor(private router:Router) {
     console.log(this.data)
+    console.log(this.rightTop)
     
    }
   
