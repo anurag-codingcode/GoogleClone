@@ -1,5 +1,6 @@
 <body>
     <div class="main">
+
         <form action="">
             <div class="logo">
                 <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 48" aria-hidden="true"
@@ -20,28 +21,12 @@
             </div>
             <div class="main">
                 <div class="flex-container-1">
-                    <h1>Create a Google Account</h1>
-                    <span>Enter your name</span>
+                    <h1>{{data.leftHeading}}</h1>
+                    <span>{{data.leftParagraph}}</span>
                 </div>
-                <div class="flex-container-main-2">
-                    <div>
-                        <mat-form-field appearance="outline" color=primary>
-                            <mat-label>First name</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-
-                    </div>
-                    <div>
-                        <mat-form-field appearance="outline" color=primary>
-                            <mat-label>Last name(optional)</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-
-                    </div>
-                    <div class="button-class">
-                        <button mat-raised-button color="primary" class="button button-2">Next</button>
-
-                    </div>
+                <div class="flex-container-main-2" [innerHTML]="data.rightTop">
+                    
+                    
                 </div>
 
             </div>
@@ -50,7 +35,18 @@
 
     <div class="main-2">
         <div>
-            <button class="footer-button">English (United Kingdom)</button>
+            <mat-select class="footer-button" placeholder="English (United States)" disableRipple>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+                <mat-option value="1">English (United States)</mat-option>
+              </mat-select>
 
 
         </div>
@@ -60,4 +56,12 @@
             <button class="footer-button">Terms</button>
         </div>
     </div>
+
+
+
+
+
+
+
+
 </body>

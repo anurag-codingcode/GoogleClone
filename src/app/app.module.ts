@@ -14,6 +14,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {FormsModule} from '@angular/forms';
 import {NgFor} from '@angular/common';
 import { RegisterComponent } from './register/register.component';
+import { MainComponentComponent } from './main-component/main-component.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
@@ -21,7 +23,9 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MainComponentComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
