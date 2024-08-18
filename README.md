@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Implementations
 -> Component based approach
- - there is a base layout and every other routes content(login,register etc are implemented in it)
-
+ - There is a base layout and every other routes content(login,register etc are implemented in it)
+ - Implemented Auth for login2 page(entering password (based on if id is present) ) and DashBoard (based on id and token)
 
 ## Development server
 

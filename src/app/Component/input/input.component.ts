@@ -30,11 +30,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class InputComponent {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  // input={
-  //   label:'Email or phone',
-  //   warning:'Please enter a valid email address',
-  //   error:{normal:'Email is',strong:'required'}
-  // }
   @Input() input:any;
 
   matcher = new MyErrorStateMatcher();

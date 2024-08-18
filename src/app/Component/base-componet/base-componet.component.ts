@@ -20,6 +20,10 @@ export class BaseComponetComponent implements OnInit {
       leftHeading: 'Sign in',
     leftParagraph: 'Use your Google Account'
   },
+  '/login2':{
+      leftHeading: 'Welcome',
+    leftParagraph: localStorage.getItem('id')
+  },
   '/':{
     leftHeading: 'Sign in',
   leftParagraph: 'Use your Google Account'

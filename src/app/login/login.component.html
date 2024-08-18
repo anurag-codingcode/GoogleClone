@@ -1,0 +1,36 @@
+<div class="flex-container-2">
+    <div>
+        <mat-form-field appearance="outline" color=primary>
+            <mat-label>Email or phone</mat-label>
+            <input matInput [(ngModel)]="email">
+        </mat-form-field>
+        <div class="warning">
+            <span class="AfGCob"><svg aria-hidden="true" class="Qk3oof xTjuxe" fill="currentColor" focusable="false"
+                width="16px" height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                </path>
+        </svg></span>
+        Couldn't find your Google Account
+
+        </div>
+        
+        <div>
+            <button mat-button color=primary class="blue-button-left">Forgot password?</button>
+        </div>
+    </div>
+    <div>
+        <p class="note">
+            Not your computer? Use Guest mode to sign in privately.
+        </p>
+        <div>
+            <button mat-button color=primary class="blue-button-left">Learn more about using Guest mode</button>
+        </div>
+
+    </div>
+    <div class="button-class">
+        <button mat-button color=primary class="button" (click)="goToRegister()">Create account</button>
+        <button mat-raised-button color="primary" class="button button-2" (click)="goToLogin2()">Next</button>
+
+    </div>
+</div>

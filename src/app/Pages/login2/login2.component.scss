@@ -1,14 +1,13 @@
 
-.main>.mat-mdc-button:not(:disabled) {
-    margin-left:0px;
-    color: #0B57D0;
-    
-    font:14px;
+
+
+
+
+.flex-container-2>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+
 }
-
-
-
-
 
 mat-form-field{
     width:400px;
@@ -30,7 +29,7 @@ mat-form-field{
 }
 
 
-.blue-button{
+.blue-button-left{
    height: auto;
    text-align: left !important;
 
@@ -50,15 +49,8 @@ mat-form-field{
 .button-2{
     background-color: #0B57D0 !important;
 }
-.main{
-    display: flex;
-    margin-top: 24px;
-}
-h1{
-    margin: 0;
-    padding: 0px;
-  
-}
+
+
 
 .flex-container-1{
     flex: 1;
@@ -76,30 +68,18 @@ h1{
     margin-left:9px;
 }
 
-.main-2{
+
+
+.warning{
+    margin-left:5px ;
+    color: #b3261e;
+    font-size: 0.75rem;
     display: flex;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 10px;
-    font-size:12px;
-    color:#1f1f1f
+    justify-content: start;
+    align-items: center;
+    gap:5px;
+    display:none;
 }
-.footer-button{
-    font-size:12px !important;
-    color: #1f1f1f !important;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background-color: rgb(231, 229, 229);
-    
-}
-
-.footer-button:not(:hover){
-    background-color: transparent;
-
-}
-
 
 
 
