@@ -21,61 +21,11 @@ form{
     
 }
 
-.main>.mat-mdc-button:not(:disabled) {
-    margin-left:0px;
-    color: #0B57D0;
-    
-    font:14px;
-}
 
 
 
 
 
-mat-form-field{
-    width:400px;
-    margin-left:9px;
-    color: #1f1f1f;
-    
-}
-.note{
-    margin-left:8px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #444746;
-    font-size: 0.875rem;
-
-}
-.mat-mdc-form-field-subscript-wrapper,.mat-mdc-form-field-bottom-align,.ng-tns-c1205077789-0{
-   height: 60px;
-
-}
-
-mat-button{
-    padding: 0px !important;
-    
-}
-
-.blue-button{
-   height: auto;
-   text-align: left !important;
-
-}
-.button-class{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap:20px
-}
-.button{
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 50px;
-   
-}
-.button-2{
-    background-color: #0B57D0 !important;
-}
 .main{
     display: flex;
     margin-top: 24px;
@@ -94,13 +44,7 @@ h1{
     margin-left:9px;
 }
 
-.flex-container-2{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap:50px;
-    margin-left:9px;
-}
+
 
 .main-2{
     display: flex;

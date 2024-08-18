@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   constructor(private router:Router){
-    console.log("url is",this.router.url)
+
   }
   
 

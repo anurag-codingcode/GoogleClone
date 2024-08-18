@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { MainComponentComponent } from './main-component/main-component.component';
-import { LayoutComponent } from './layout/layout.component';
+import { LoginComponent } from './Pages/login/login.component';
+import { RegisterComponent } from './Pages/register/register.component';
+
+import { BaseComponetComponent } from './Component/base-componet/base-componet.component';
+import { BasicinfoComponent } from './Pages/basicinfo/basicinfo.component';
+import { PasswordComponent } from './Pages/password/password.component';
+import { UsernameComponent } from './Pages/username/username.component';
+
 
 const routes: Routes = [
   {
-    path:'login',
-    component:LoginComponent
-  },{
-    path:'',
-    component:LoginComponent
-  },{
-    path:'main-component',
-    component:MainComponentComponent
-  },{
-    path:'layout',
-    component:LayoutComponent
-  },
-  {
-    path:'register',
-    component:RegisterComponent
+    path: '',
+    component: BaseComponetComponent,
+    children: [
+      {path: 'register', component: RegisterComponent},
+      { path: 'login', component: LoginComponent },
+      { path: 'basicinfo', component: BasicinfoComponent },
+      { path: 'password', component: PasswordComponent},
+      { path: 'username', component: UsernameComponent},
+      { path: '', component: LoginComponent }
+    ]
   }
 ];
 
