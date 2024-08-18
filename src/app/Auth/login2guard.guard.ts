@@ -14,7 +14,8 @@ export const login2guardGuard: CanActivateFn = (route, state) => {
       else {
         router.navigate(['/login'])
       }
-    }else{
+    }
+    else{
       if (localStorage.getItem('id') && localStorage.getItem('token')) {
         return true
       }

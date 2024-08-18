@@ -31,6 +31,9 @@ import { Login2Component } from './Pages/login2/login2.component';
 import { HttpService } from './service/http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { NotesCardComponent } from './Component/notes-card/notes-card.component';
+
 
 @NgModule({
   declarations: [
@@ -46,6 +49,7 @@ import { DashboardComponent } from './Pages/dashboard/dashboard.component';
     UsernameComponent,
     Login2Component,
     DashboardComponent,
+    NotesCardComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +65,8 @@ import { DashboardComponent } from './Pages/dashboard/dashboard.component';
     RouterModule,
     ReactiveFormsModule, // Add ReactiveFormsModule here
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

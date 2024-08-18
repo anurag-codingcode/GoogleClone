@@ -19,7 +19,7 @@ const routes: Routes = [
     component: BaseComponetComponent,
     children: [
       {path: 'register', component: RegisterComponent},
-      { path: 'login', component: LoginComponent },
+      { path: 'login', component: LoginComponent},
       { path: 'login2', component: Login2Component,canActivate:[login2guardGuard]},
       { path: 'basicinfo', component: BasicinfoComponent },
       { path: 'password', component: PasswordComponent},

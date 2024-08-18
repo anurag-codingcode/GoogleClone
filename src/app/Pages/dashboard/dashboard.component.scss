@@ -1,0 +1,133 @@
+mat-toolbar {
+    background-color: white;
+    border-bottom: 0.5px solid rgb(195, 186, 186);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.keeplogo {
+    font-size: 20px;
+    color: rgb(139, 138, 138);
+    display: flex;
+
+    align-items: center;
+    width: 18%;
+}
+
+.searchBar {
+    display: flex;
+    padding: 5px;
+    background-color: rgb(240, 233, 233);
+    border-radius: 10px;
+    margin-top: 4px;
+
+    width: 45%;
+}
+
+.tools {
+
+    width: 14%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile {
+
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile_pic {
+    border: 1px solid grey;
+    width: 90px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    border-radius: 4px;
+    margin-left: 4%;
+}
+
+.searchinput {
+    background-color: rgb(240, 233, 233);
+    border-color: rgb(240, 233, 233);
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 20px;
+}
+
+.material-icons {
+    color: rgb(139, 138, 138);
+    padding: 2px 1px 2px 2px;
+    font-size: 30px;
+    margin-top: 4px;
+}
+
+img {
+    // border: 2px solid green;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 45px;
+    width: 60px;
+    // border: 2px solid green;
+
+}
+
+.img1 {
+    height: 40px;
+    width: 40px;
+}
+
+.sidenav-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+}
+.element{
+    /* border: 1px solid black; */
+    padding: 20px 0 10px 20px;
+    display: flex;
+    /* margin-top: 10px; */
+    
+}
+.element img{
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 25px;
+}
+.element span{
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    margin-right: 150px;
+    font-weight:500;
+}
+.element:hover{
+    background-color: rgb(246, 225, 185);
+    border-radius: 0 25px 25px 0;
+}
+
+.main{
+    display: flex;
+}
+
+.notesContent{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px
+}

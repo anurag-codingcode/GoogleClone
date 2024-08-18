@@ -20,7 +20,7 @@ export class Login2Component {
     if(id){
       this.http.getUser(id).subscribe({
         next: (res: any) => {
-          console.log(res.password)
+          // console.log(res.password)
           if(this.password==res.password){
             console.log('some shit')
             localStorage.setItem('token',res.password)
