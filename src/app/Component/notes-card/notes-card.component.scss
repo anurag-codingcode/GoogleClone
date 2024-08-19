@@ -5,10 +5,17 @@
     width: fit-content;
     padding:10px 10px;
     background-color: white; /* Ensure the background is white */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border: 1px solid transparent;
+    overflow: hidden;
+    box-shadow:border-box; /* Add shadow */
     border-radius: 5px;
-    width: 200px;
-    height: 150px;
+    width: 238px;
+    border-color: #e0e0e0;
+    border-radius: 8px;
+}
+.title{
+     font-size: 1rem;
+     font-weight: 500;
 }
 .card-content{
     display: flex;
@@ -21,7 +28,14 @@ img{
 }
 
 .button{
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    height: 33px;
+}
+.card:not(:hover){
+    svg{
+        display: none;
+    }
+
 }

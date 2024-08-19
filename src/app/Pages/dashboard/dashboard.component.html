@@ -1,9 +1,16 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+
 <mat-toolbar class="header">
-    <img class="img1" src="../assets/header/hamburger.svg" (click)="toggleSidebar()">
+
+    <svg class="hamburger" focusable="false" viewBox="0 0 24 24" (click)="toggleSidebar()">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
     <span class="keeplogo">
         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Keep_icon_%282020%29.svg">
         <p>Keep</p>
     </span>
+
 
     <span class="searchBar">
         <img src="../assets/header/search.svg" alt="icon">
@@ -11,51 +18,120 @@
     </span>
 
     <div class="tools">
-        <img src="../assets/header/refresh.svg" alt="icon">
-        <img src="../assets/header/pause.svg" alt="icon">
-        <img src="../assets/header/settings.svg" alt="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+                d="M479.04-151.87q-137.11 0-232.62-95.51-95.51-95.51-95.51-232.62t95.51-232.62q95.51-95.51 232.62-95.51 71.16 0 135.71 29.22 64.55 29.21 110.51 83.89v-113.11h83.83v291.72H517.13V-600H683.7q-32-54.57-86.43-85.85-54.42-31.28-118.23-31.28-98.8 0-167.96 69.16Q241.91-578.8 241.91-480t69.17 167.97q69.16 69.16 167.96 69.16 75.57 0 136.73-43.28T702.17-400h95.24q-28.24 109.35-116.63 178.74-88.39 69.39-201.74 69.39Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"
+            transform="rotate(90)">
+            <path
+                d="M519.76-185.41v-589.18h254.83v589.18H519.76Zm-334.35 0v-589.18h254.83v589.18H185.41Zm425.35-91h72.83v-407.18h-72.83v407.18Zm-334.35 0h72.83v-407.18h-72.83v407.18Zm0-407.18v407.18-407.18Zm334.35 0v407.18-407.18Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px" fill="#666666">
+            <path
+                d="M382.74-74.02 362.5-201.93q-17.57-6.29-37.49-17.69-19.92-11.4-34.73-23.45l-119.67 54.96-98.5-173.8 109.43-79.96q-1.76-8.28-2.26-19.06-.5-10.79-.5-19.07 0-8.28.5-19.07.5-10.78 2.26-19.06l-109.43-80.2 98.5-173.32 120.15 54.72q14.57-11.81 34.37-23.09 19.8-11.28 37.37-16.81l20.24-129.39h194.52l20.24 128.39q17.57 6.53 37.87 17.31 20.3 10.78 34.35 23.59l119.91-54.72 98.26 173.32-109.67 78.2q1.76 9.28 2.38 20.06.62 10.79.62 20.07 0 9.28-.62 19.57-.62 10.28-2.38 19.56l109.67 78.96-98.5 173.8-119.91-54.96q-14.81 12.05-34.11 23.83-19.3 11.78-37.87 17.31L577.26-74.02H382.74Zm55.17-68.13h83.94l14.24-111.76q33.24-8 63.09-25 29.86-17 53.86-41.72l106 46 37.85-68.89-93.52-68.52q4-17.24 6.62-33.98t2.62-33.98q0-17.24-2.12-33.98t-7.12-33.98l93.76-68.52-38.09-68.89-105.76 46q-23-26.48-52.48-44.34-29.47-17.86-64.71-22.62l-14-111.52h-84.18l-13.76 111.52q-34.48 6.76-64.45 24.12-29.98 17.36-53.22 42.84l-105.52-46-38.09 68.89 93.28 68.28q-4 17.24-6.62 34.1-2.62 16.86-2.62 34.1 0 17.24 2.62 34.22t6.62 33.98l-93.28 68.28 38.09 68.89 105.52-46q24.24 24.48 54.22 41.72 29.97 17.24 63.45 25.24l13.76 111.52ZM479.52-350q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm.48-130Z" />
+        </svg>
     </div>
     <div class="profile">
-        <img src="../assets/header/apps.svg" style="margin-top: 3% ;" alt="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px" fill="#666666">
+            <path
+                d="M223.29-154.5q-29.12 0-48.95-19.84-19.84-19.83-19.84-48.95 0-29.12 19.84-48.91 19.83-19.8 48.95-19.8 29.12 0 48.91 19.8 19.8 19.79 19.8 48.91 0 29.12-19.8 48.95-19.79 19.84-48.91 19.84Zm256.8 0q-29.05 0-48.88-19.84-19.84-19.83-19.84-48.95 0-29.12 19.75-48.91 19.74-19.8 48.79-19.8t48.88 19.8q19.84 19.79 19.84 48.91 0 29.12-19.75 48.95-19.74 19.84-48.79 19.84Zm256.62 0q-29.12 0-48.91-19.84-19.8-19.83-19.8-48.95 0-29.12 19.8-48.91 19.79-19.8 48.91-19.8 29.12 0 48.95 19.8 19.84 19.79 19.84 48.91 0 29.12-19.84 48.95-19.83 19.84-48.95 19.84ZM223.29-411.37q-29.12 0-48.95-19.75-19.84-19.74-19.84-48.79t19.84-48.88q19.83-19.84 48.95-19.84 29.12 0 48.91 19.75 19.8 19.74 19.8 48.79t-19.8 48.88q-19.79 19.84-48.91 19.84Zm256.8 0q-29.05 0-48.88-19.75-19.84-19.74-19.84-48.79t19.75-48.88q19.74-19.84 48.79-19.84t48.88 19.75q19.84 19.74 19.84 48.79t-19.75 48.88q-19.74 19.84-48.79 19.84Zm256.62 0q-29.12 0-48.91-19.75-19.8-19.74-19.8-48.79t19.8-48.88q19.79-19.84 48.91-19.84 29.12 0 48.95 19.75 19.84 19.74 19.84 48.79t-19.84 48.88q-19.83 19.84-48.95 19.84ZM223.29-668q-29.12 0-48.95-19.8-19.84-19.79-19.84-48.91 0-29.12 19.84-48.95 19.83-19.84 48.95-19.84 29.12 0 48.91 19.84 19.8 19.83 19.8 48.95 0 29.12-19.8 48.91-19.79 19.8-48.91 19.8Zm256.8 0q-29.05 0-48.88-19.8-19.84-19.79-19.84-48.91 0-29.12 19.75-48.95 19.74-19.84 48.79-19.84t48.88 19.84q19.84 19.83 19.84 48.95 0 29.12-19.75 48.91-19.74 19.8-48.79 19.8Zm256.62 0q-29.12 0-48.91-19.8-19.8-19.79-19.8-48.91 0-29.12 19.8-48.95 19.79-19.84 48.91-19.84 29.12 0 48.95 19.84 19.84 19.83 19.84 48.95 0 29.12-19.84 48.91-19.83 19.8-48.95 19.8Z" />
+        </svg>
         <div class="profile_pic">
             <span>User</span>
-        <img src="../assets/header/profile.png" alt="icon" height="25px" width="25px">
+            <img src="../assets/header/profile.png" alt="icon" height="25px" width="25px">
+        </div>
+
+
     </div>
-    </div>
+
+
+
+
 
 </mat-toolbar>
 <div class="main">
     <div class="sidenav-container">
         <div class="element" (click)="handleNotesClick()">
-            <img src="../assets/sidebar/notes.svg" alt="logo">
-            <span *ngIf="isVisible" >Notes</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z">
+                </path>
+            </svg>
+            <span *ngIf="isVisible">Notes</span>
         </div>
         <div class="element">
-            <img src="../assets/sidebar/reminders.svg" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M18 17v-6c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v6H4v2h16v-2h-2zm-2 0H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2z">
+                </path>
+            </svg>
             <span *ngIf="isVisible">Reminders</span>
         </div>
         <div class="element">
-            <img src="../assets/sidebar/tag.svg" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16zM16 17H5V7h11l3.55 5L16 17z">
+                </path>
+            </svg>
             <span *ngIf="isVisible">hjjh</span>
         </div>
         <div class="element">
-            <img src="../assets/sidebar/edit.svg" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M20.41 4.94l-1.35-1.35c-.78-.78-2.05-.78-2.83 0L13.4 6.41 3 16.82V21h4.18l10.46-10.46 2.77-2.77c.79-.78.79-2.05 0-2.83zm-14 14.12L5 19v-1.36l9.82-9.82 1.41 1.41-9.82 9.83z">
+                </path>
+            </svg>
             <span *ngIf="isVisible">Edit labels</span>
         </div>
         <div class="element" (click)="handleArchiveClick()">
-            <img src="../assets/sidebar/archive.svg" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z">
+                </path>
+            </svg>
             <span *ngIf="isVisible">Archive</span>
         </div>
         <div class="element" (click)="handleTrashClick()">
-            <img src="../assets/sidebar/trash.svg" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z"></path>
+                <path d="M9 8h2v9H9zm4 0h2v9h-2z"></path>
+            </svg>
             <span *ngIf="isVisible">Trash</span>
         </div>
     </div>
-    <div class="notesContent">
-        <div *ngFor="let note of notes">
-            <app-notes-card [data]="note" ></app-notes-card>
+    <div class="main2">
+        <div class="addNote">
+            <div class="notClicked" *ngIf="addNewNote">
+                <div>Take a note...</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="m429-336 238-237-51-51-187 186-85-84-51 51 136 135ZM216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm0-72h528v-528H216v528Zm0-528v528-528Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M247-139q-45 0-84.5-20.5T96-215q31-2 53-23t22-52q0-48 33.15-80.5 33.14-32.5 80.5-32.5 47.35 0 79.85 32.96Q397-337.08 397-290q0 63-43.5 107T247-139Zm0-67q34.65 0 59.33-24.68Q331-255.35 331-290q0-19-13.5-32.5T285-336q-19 0-32.5 13.5T239-290q0 22-5 42.5T215-211q8 2 16 3.5t16 1.5Zm236-170L381-478l319-319q14-14 34-14t34 14l34 34q14 14.45 14 33.73Q816-710 802-696L483-376Zm-199 86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M216-144q-29.7 0-50.85-21.5Q144-187 144-216v-528q0-29 21.15-50.5T216-816h528q29.7 0 50.85 21.5Q816-773 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm48-72h432L552-480 444-336l-72-96-108 144Zm-48 72v-528 528Z" />
+                    </svg>
+                </div>
+            </div>
         </div>
-        
+        <div class="notesContent">
+
+            <div *ngFor="let note of notes">
+                <app-notes-card [data]="note"></app-notes-card>
+            </div>
+
+        </div>
+
     </div>
+
 
 </div>

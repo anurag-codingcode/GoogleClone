@@ -10,6 +10,7 @@ import { HttpService } from 'src/app/service/http.service';
 export class DashboardComponent implements OnInit {
   isVisible=true
   notes=[]
+  addNewNote=true
   toggleSidebar(){
     this.isVisible=!this.isVisible
    
