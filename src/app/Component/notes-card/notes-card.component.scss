@@ -1,10 +1,27 @@
 .card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     width: fit-content;
-    padding:10px 10px 30px;
+    padding:10px 10px;
     background-color: white; /* Ensure the background is white */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     border-radius: 5px;
+    width: 200px;
+    height: 150px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }

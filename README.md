@@ -7,7 +7,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - There is a base layout and every other routes content(login,register etc are implemented in it)
  - Implemented Auth for login2 page(entering password (based on if id is present) ) and DashBoard (based on id and token)
  - made the notes archieve and trash data fetching part working
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
