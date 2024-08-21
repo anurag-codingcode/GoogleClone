@@ -14,10 +14,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     const isSubmitted = form && form.submitted;
     if(isSubmitted){
       // login of login or anyother on submit
-
-
-
-
     }
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
@@ -30,8 +26,12 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class InputComponent {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  
+
+ 
   @Input() input:any;
 
+  
   matcher = new MyErrorStateMatcher();
   
 }

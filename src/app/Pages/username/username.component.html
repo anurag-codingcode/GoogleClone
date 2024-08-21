@@ -1,1 +1,36 @@
-<p>username works!</p>
+<div class="flex-container-2">
+    <div>
+        <mat-form-field appearance="outline" color="primary" class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="" [(ngModel)]="email">
+            
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email is required
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Enter a valid email
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('notfound') && !emailFormControl.hasError('required') && !emailFormControl.hasError('email')">
+              Email is already taken
+            </mat-error>
+          </mat-form-field>
+          
+        <div class="warning">
+            <span class="AfGCob"><svg aria-hidden="true" class="Qk3oof xTjuxe" fill="currentColor" focusable="false"
+                    width="16px" height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                    </path>
+                </svg></span>
+            Email is already taken
+
+        </div>
+
+
+    </div>
+    <div class="button-class">
+
+        <button mat-raised-button color="primary" class="button button-2" type="submit" (click)="submit()">Next</button>
+
+    </div>
+</div>

@@ -73,9 +73,12 @@ export class LoginComponent implements OnInit {
     
   }
 
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-  matcher = new MyErrorStateMatcher();
+  displayOption(e:Event) :void{
+    
+    e.preventDefault();
+    //@ts-ignore
+    document.getElementById('popUp').style.display = 'block';
+  }
+
+ 
 }

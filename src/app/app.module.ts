@@ -33,7 +33,7 @@ import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NotesCardComponent } from './Component/notes-card/notes-card.component';
 import { SearchPipe } from './pipe/search.pipe';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -68,6 +68,7 @@ import { SearchPipe } from './pipe/search.pipe';
     MatCheckboxModule,
     HttpClientModule,
     MatToolbarModule,
+    MatCardModule
     
    
   ],

@@ -24,5 +24,12 @@ export class HttpService {
     console.log(data)
     return this.http.post(`${this.BASEURL}notes/addNotes?access_token=${localStorage.getItem('token')}`,data)
   }
+  registerUser(data:any){
+    console.log(data)
+    return this.http.post(`${this.BASEURL}user/userSignUp`,data)
+  }
+  editnote(data:any){
+    return this.http.patch(`${this.BASEURL}notes/${data.id}?access_token=${localStorage.getItem('token')}`,data)
+  }
   
 }

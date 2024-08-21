@@ -29,8 +29,16 @@
 
     </div>
     <div class="button-class">
-        <button mat-button color=primary class="button" (click)="goToRegister()">Create account</button>
+        <button mat-button color=primary class="button" (click)="displayOption($event)">Create account</button>
+        
         <button mat-raised-button color="primary" class="button button-2" (click)="goToLogin2()">Next</button>
-
     </div>
+    
 </div>
+<mat-card id="popUp">
+    <div>
+      <p class="pp" [routerLink]="['/register']">For my personal use</p>
+      <p class="pp" [routerLink]="['/register']">For my child</p>
+      <p class="pp" [routerLink]="['/register']">For work or my bussiness</p>
+    </div>
+  </mat-card>

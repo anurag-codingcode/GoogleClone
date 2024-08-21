@@ -81,6 +81,29 @@ mat-form-field{
 
 
 
-
+#popUp {
+    background-color: #e0e7f1 !important;
+    
+    font-size: small;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 170px; /* Adjust this value to position the popup above the button */
+    left: 70%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+.pp{
+    padding: 5px;
+    border-radius: 8px;
+}
+.pp:hover{
+    background-color: #d1d1d1;
+    
+}
 
 

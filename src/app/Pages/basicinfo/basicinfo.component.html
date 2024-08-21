@@ -1,1 +1,42 @@
-<p>basicinfo works!</p>
+<div class="flex-container-2">
+    <div class="dob">
+        <div class="month">
+            <mat-form-field appearance="outline" color=primary>
+                <mat-select placeholder="Month" disabledRipple style="font-size: medium;">
+                    <mat-option class="opt" *ngFor="let month of months"
+                        [value]="month.value">{{month.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+        <div class="month">
+            <mat-form-field appearance="outline" color=primary>
+                <mat-label>Day</mat-label>
+                <input matInput formControlName="day">
+
+            </mat-form-field>
+        </div>
+        <div class="month">
+            <mat-form-field appearance="outline" color=primary>
+                <mat-label>Year</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="gender">
+        <mat-form-field appearance="outline" color=primary class="gender-box">
+            <mat-select placeholder="Gender" disabledRipple>
+                <mat-option class="opt" value="Male">Male</mat-option>
+                <mat-option class="opt" value="Female">Female</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <button mat-button color=primary class="blue-button">Why we ask for birthday and gender</button>
+    </div>
+
+    <div class="button-class">
+        <button mat-raised-button color="primary" class="button button-2" >Next</button>
+
+    </div>
+</div>

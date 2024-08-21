@@ -11,6 +11,9 @@ import { HttpService } from 'src/app/service/http.service';
 export class DashboardComponent implements OnInit {
   isVisible=true
   notes:any=[]
+  archive:any=[]
+  deleted:any=[]
+  showNotes:any=[]
   allNotes:any=[]
   addNewNote=false
   data={
@@ -18,6 +21,7 @@ export class DashboardComponent implements OnInit {
     description:''
   }
   searchQuery=''
+  title='Keep'
   toggleSidebar(){
     this.isVisible=!this.isVisible
    
@@ -52,8 +56,13 @@ export class DashboardComponent implements OnInit {
     
       this.http.getNotes().subscribe({
         next:(res:any)=>{
-          this.notes=res.data.data
           this.allNotes=res.data.data
+          this.archive=this.allNotes.filter((note:any)=>note.isArchived==true)
+          this.deleted=this.allNotes.filter((note:any)=>note.isDeleted==true)
+          this.notes=this.allNotes.filter((note:any)=>note.isDeleted==false && note.isArchived==false)
+          this.showNotes=this.notes
+          
+          
         }
       })
   }
@@ -63,27 +72,45 @@ export class DashboardComponent implements OnInit {
   this.notes=this.search.transform(this.allNotes,this.searchQuery)
   }
   handleNotesClick(){
-    this.http.getUser(this.id).subscribe({
-      next:(res:any)=>{
-        this.notes=res.data.notes
-      }
-    })
+    this.title='Notes'
+    this.showNotes=this.notes
   }
 
   handleArchiveClick(){
-    this.http.getUser(this.id).subscribe({
-      next:(res:any)=>{
-        this.notes=res.data.archive
-      }
-    })
+    this.title='Archive'
+    this.showNotes=this.archive
 
   }
   handleTrashClick(){
-    this.http.getUser(this.id).subscribe({
-      next:(res:any)=>{
-        this.notes=res.data.trash
+    this.title='Trash'
+    this.showNotes=this.deleted
+
+  }
+  deleteNote(data:any){
+    console.log("in delte")
+    data.isDeleted=true
+    this.http.editnote(data).subscribe({
+      next:(res)=>{
+        console.log(res)
+      },
+      error:(err)=>{
+        console.log(err)
       }
     })
+
+
+  }
+  archiveNote(data:any){
+    data.isArchived=true
+    this.http.editnote(data).subscribe({
+      next:(res)=>{
+        console.log(res)
+      },
+      error:(err)=>{
+        console.log(err)
+      }
+    })
+
 
   }
 }

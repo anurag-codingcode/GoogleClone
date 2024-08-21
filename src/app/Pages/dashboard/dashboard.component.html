@@ -8,7 +8,7 @@
     </svg>
     <span class="keeplogo">
         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Keep_icon_%282020%29.svg">
-        <p>Keep</p>
+        <p>{{title}}</p>
     </span>
 
 
@@ -160,8 +160,8 @@
         </div>
         <div class="notesContent">
 
-            <div *ngFor="let note of notes">
-                <app-notes-card [data]="note"></app-notes-card>
+            <div *ngFor="let note of showNotes">
+                <app-notes-card [data]="note" (sendDataToParent)="deleteNote($event)" (sendDataToParentArchive)="archiveNote($event)"></app-notes-card>
             </div>
 
         </div>
