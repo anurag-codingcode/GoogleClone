@@ -18,7 +18,6 @@ import { NgFor } from '@angular/common';
 import { RegisterComponent } from './Pages/register/register.component';
 
 
-
 // import { BasicinfoComponent } from './basicinfo/basicinfo.component';
 import { ButtonComponent } from './Component/button/button.component';
 import { InputComponent } from './Component/input/input.component';
@@ -33,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NotesCardComponent } from './Component/notes-card/notes-card.component';
+import { SearchPipe } from './pipe/search.pipe';
+
 
 
 @NgModule({
@@ -66,9 +67,11 @@ import { NotesCardComponent } from './Component/notes-card/notes-card.component'
     ReactiveFormsModule, // Add ReactiveFormsModule here
     MatCheckboxModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    
+   
   ],
-  providers: [HttpService],
+  providers: [HttpService,SearchPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

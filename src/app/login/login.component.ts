@@ -45,11 +45,17 @@ export class LoginComponent implements OnInit {
 
   goToLogin2() {
     if (this.email != '') {
-      this.http.getUser(this.email).subscribe({
+      this.http.findAccount(this.email).subscribe({
         next: (res: any) => {
-          console.log("res", res)
-          localStorage.setItem('id',res.id)
+          
+          if(res.length>0){
+            localStorage.setItem('id',res[0].email)
           this.router.navigate(['login2']);
+          }else{
+            const element = this.renderer.selectRootElement('.warning', true);
+            this.renderer.setStyle(element, 'display', 'flex');
+          }
+          
         },
         error: (err: any) => {
           console.log("error is", err.status)

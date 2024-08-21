@@ -57,8 +57,14 @@ export class BaseComponetComponent implements OnInit {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
+      
       this.data=this.leftContent[this.router.url]
+
+      if(this.router.url=='/login2'){
+        this.data.leftParagraph= localStorage.getItem('id')
+      }
     });
+
   }
 
   goToRegister() {

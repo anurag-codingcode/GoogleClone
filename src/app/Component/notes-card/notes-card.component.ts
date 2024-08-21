@@ -9,6 +9,7 @@ import { Component ,EventEmitter,Input, Output} from '@angular/core';
 export class NotesCardComponent {
   @Input() data:any
   // @Output() sendDataToParent=new EventEmitter()
+
   handleDelete(id:any){
    
     // this.sendDataToParent.emit(id)

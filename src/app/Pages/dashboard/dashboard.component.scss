@@ -17,7 +17,6 @@ mat-toolbar {
     font-size: 20px;
     color: rgb(139, 138, 138);
     display: flex;
-
     align-items: center;
     width: 18%;
 }
@@ -32,7 +31,7 @@ mat-toolbar {
     width: 45%;
 }
 
-svg{
+svg {
     fill: #5f6368;
 }
 
@@ -97,20 +96,22 @@ img {
     width: 40px;
 }
 
-.sidenav-container{
+.sidenav-container {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    width:fit-content;
+    width: fit-content;
 }
-.element{
+
+.element {
     /* border: 1px solid black; */
     padding: 20px 0 10px 20px;
     display: flex;
     /* margin-top: 10px; */
-    
+
 }
-.header-logo{
+
+.header-logo {
     height: 48px;
     width: 48px;
     display: flex;
@@ -118,63 +119,123 @@ img {
     justify-content: center;
 
 }
-.hamburger{
+
+.hamburger {
     height: 24px;
     width: 24px;
-    
+
 }
-.element img{
+
+.element img {
     /* border: 1px solid red; */
     width: 25px;
     height: 25px;
 }
-.element span{
+
+.element span {
     /* border: 1px solid red; */
     margin-left: 30px;
     margin-right: 150px;
-    font-weight:500;
+    font-weight: 500;
 }
-.element:hover{
+
+.element:hover {
     background-color: #feefc3;
     border-radius: 0 25px 25px 0;
 }
 
-.main{
+.main {
     display: flex;
     margin-top: 5px;
 }
-.main2{
+
+.main2 {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap:10px
 }
 
-.notesContent{
+.notesContent {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap:50px
+    row-gap: 50px;
+    column-gap: 10px;
+    justify-content: center;
 }
 
-
-.addNote{
+.clicked{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.clicked>input{
+    border: none;
+    padding: 10px;
+}
+.clicked>input:focus{
+    border: none !important;
+}
+.clicked>.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.addNote {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
     width: 50%;
     border: solid;
-    
+    overflow: hidden;
+    box-shadow: border-box;
+    /* Add shadow */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-top: 5px;
+
 }
-.notClicked{
-    width: 500px;
+
+.notClicked {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.notClicked>div:nth-child(1) {
+    flex: 3;
 
 }
-.addNoteInput{
+
+.circular-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    /* Optional: Add a border */
+}
+
+.circular-container img {
+    width: 100%;
+    height: auto;
+}
+
+.notClicked>div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.addNoteInput {
     display: flex;
     width: 500px;
 }
